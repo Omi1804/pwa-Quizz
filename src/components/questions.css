@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&display=swap');
+*{
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.question-container {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.question-title{
+    font-size: 1.3rem;
+    color: #293264;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.answers{
+    display: flex;
+    gap: 1.7rem;
+    margin-block: 1rem;
+}
+
+.answer {
+    color: rgba(41, 50, 100, 1);
+    background-color: transparent;
+    border: 2px solid #4D5B9E;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #293264;
+    border-radius: 15px;
+    padding: .4rem 1.3rem;   
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.line{
+    margin-top: .5rem;
+    width: 100%;
+    border-top: 0.794239px solid #c4c8e0;
+}
+
+.selected{
+    background-color: #D6DBF5;
+    border: none;
+}
+
+#correct.answer{
+    background-color: #94D7A2;
+    border: 1px solid #94D7A2;
+}
+#correct.answer.selected{
+    background-color: #50d76d;
+}
+#incorrect.answer.selected{
+    background-color: #F8BCBC;
+    border: 1px solid #F8BCBC;
+}
+#not-selected.answer{
+    color: rgba(41, 50, 100, .4);
+    border: 1px solid rgba(41, 50, 100, .4);
+}
+
+/* Media Queries */
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+
+    .container{
+
+    }
+
+
+    .question-title {
+        font-size: .85rem;
+    }
+
+    .answers{
+        gap: 0.4rem;
+        margin-block: .5rem;
+    }
+    
+    .answer {
+        font-size: 0.6rem;
+        padding: 0.5rem .5rem;
+        margin-bottom: .4rem;
+        border-radius: 10px;
+    }
+}
+
+/* For screens between 481px and 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .question-title {
+        font-size: 1.1rem;
+    }
+
+    .answer {
+        font-size: 0.95rem;
+        padding: 0.35rem 1.1rem;
+        margin-bottom: 0.9rem;
+    }
+}
+
+/* For screens between 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .question-title {
+        font-size: 1rem;
+    }
+
+    .answer {
+        font-size: 0.9rem;
+        padding: 0.3rem 1rem;
+        margin-bottom: 0.8rem;
+    }
+}

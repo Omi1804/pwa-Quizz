@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&display=swap');
+
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.page-title {
+    font-size: 2.4rem;
+    margin: 1rem;
+    color: #293264;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+}
+
+.page-description {
+    color: #293264;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.start-button {
+    width: 193px;
+    height: 52px;
+    background: #4D5B9E;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+}
+
+.start-button:focus{
+    background-color:#293264;
+}
+
+.blob1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+}
+
+.blob2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 767px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .page-description {
+        font-size: 1.1rem;
+    }
+
+    .start-button {
+        width: 160px;
+        height: 48px;
+        font-size: 0.9rem;
+    }
+}
+
+/* For screens between 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .page-title {
+        font-size: 2.2rem;
+    }
+
+    .page-description {
+        font-size: 1.2rem;
+    }
+
+    .start-button {
+        width: 180px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
