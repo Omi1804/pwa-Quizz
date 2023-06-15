@@ -107,7 +107,7 @@ const App = () => {
 
   return (
     <div className="main-container">
-      <img src={blob1} className='mainblob1' />
+      <img src={blob1} alt='blob1' className='mainblob1' />
       {gameStart
 
         ? <div className="start-content-container">
@@ -133,7 +133,7 @@ const App = () => {
 
         : <Starting start={start} />
       }
-      <img src={blob2} className='mainblob2' />
+      <img src={blob2} alt='blob2' className='mainblob2' />
 
       <footer>Developed by&nbsp;
         <a href="https://om-nigam.netlify.app" target="_blank" rel="noreferrer">
